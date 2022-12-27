@@ -20,7 +20,7 @@
 | Modelo de datos          	| Desestructurado                                                                                                              	| Estructurado                                                                                                            	|
 | Mutabilidad              	| Immutable                                                                                                                    	| Mutable                                                                                                                 	|
 | Previsibilidad           	| Asíncrona                                                                                                                    	| Síncrona                                                                                                                	|
-|
+
 
 **Nota:** Visualizar el contenido anterior en formato tabla en el repositorio GIT, ya que esta tabla se ha generado a través de una aplicación de terceros y al pegar el contenido se visualiza de esta forma desordenada e inlegible.
 
@@ -37,6 +37,16 @@
 
 3. ¿Qué son, cuáles son y para qué sirven los estados en los formularios dirigidos por templates?
 
+- La directiva ngModel cambia y agrega clases de CSS al elemento en el que se encuentra, según la interacción del usuario con él. Dicha interacción puede tener 3 estados diferentes, es decir, los estados nos permite echar un vistazo al estado del control del formulario, si el usuario lo ha visitado, si el usuario lo ha cambiado y, finalmente, si está en un estado válido.
 
+- Los estados son los siguientes: 
+   - Visitado (Clase CSS -> ng-touched / ng-untouched).
+   - Cambiado (Clase CSS -> ng-dirty / ng-pristine).
+   - Válido (Clase CSS -> ng-valid / ng-invalid).
+
+- Agregar la directiva NgModel a un control agrega nombres de clase (ng-touched, ng-untouched, ...) al control que describen su estado. Estas clases se pueden usar para cambiar el estilo de un control en función de su estado.
+
+- Comentar también, el Seguimiento de estados de formulario:
+   - Angular aplica la clase ng-submitted a los elementos del formulario después de que se haya enviado el formulario. Esta clase se puede utilizar para cambiar el estilo del formulario después de que se haya enviado.
 
 4. ¿Qué ventajas aportan los FormGroup en la composición de formularios?
