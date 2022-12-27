@@ -50,3 +50,5 @@
    - Angular aplica la clase ng-submitted a los elementos del formulario después de que se haya enviado el formulario. Esta clase se puede utilizar para cambiar el estilo del formulario después de que se haya enviado.
 
 4. ¿Qué ventajas aportan los FormGroup en la composición de formularios?
+
+   1. 
